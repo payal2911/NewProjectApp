@@ -3,10 +3,11 @@ import { Ionicons } from '@expo/vector-icons';
 
 import { pixelNormalize } from "../constants/Size";
 import { SafeAreaView } from "react-native-safe-area-context";
+import {useNavigation} from "@react-navigation/native";
 
 const Home = (props) => {
-
-    return (
+    const navigation = useNavigation();
+return (
         <>
             <StatusBar style="light" />
             <ScrollView style={styles.container}>
@@ -15,8 +16,11 @@ const Home = (props) => {
                     <Image style={styles.imageContainer} source={require("../../assets/Images/doraImage.png")} />
 
                     <View style={{ alignItems: "center" }}>
-
-                        <Text style={styles.textContainer}>4.0</Text>
+                        <TouchableOpacity onPress={()=> {
+                            navigation.push('MovieDetails');
+                        }}>
+                            <Text style={styles.textContainer}>4.0</Text>
+                        </TouchableOpacity>
 
                         <View style={{ flexDirection: "row", alignSelf: 'center' }} >
                             <View style={styles.innerImageContainer} >

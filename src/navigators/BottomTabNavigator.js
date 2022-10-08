@@ -1,5 +1,4 @@
-
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {NavigationContainer} from "@react-navigation/native";
 import Tab1Navigator from "./tabs/Tab1Navigator";
 import DownloadScreen from "../screens/DownloadScreen";
@@ -7,11 +6,12 @@ import SearchScreen from "../screens/SearchScreen";
 import ProfileScreen from "../screens/ProfileScreen";
 import {Entypo, Ionicons} from "@expo/vector-icons";
 import HomeScreen from "../screens/HomeScreen";
+import Tab1Stack from "./tabs/Tab1Stack";
 
 const Tab = createBottomTabNavigator();
 const BottomTabNavigator = () => {
-    return(<>
-        <NavigationContainer>
+    return (<>
+
         <Tab.Navigator
             screenOptions={{
                 tabBarShowLabel: true,
@@ -27,40 +27,45 @@ const BottomTabNavigator = () => {
                     //color: "red",
                 },
             }}>
-            <Tab.Screen name="Home" component={HomeScreen} options={{headerShown: false, tabBarIcon: ({color}) =>(
+            <Tab.Screen name="Home" component={Tab1Stack } options={{
+                headerShown: false, tabBarIcon: ({color}) => (
                     <Entypo
                         name="home"
                         size={30}
-                        color={color} />
+                        color={color}/>
                 ),
             }}
             />
-            <Tab.Screen name="Search" component={SearchScreen} options={{headerShown: false,  tabBarIcon: ({color}) => (
+            <Tab.Screen name="Search" component={SearchScreen} options={{
+                headerShown: false, tabBarIcon: ({color}) => (
                     <Ionicons
                         name="search"
                         size={30}
-                        color={color} />
-                ),}} />
+                        color={color}/>
+                ),
+            }}/>
 
-            <Tab.Screen name="Download" component={DownloadScreen}  options={{headerShown: false,  tabBarIcon: ({color}) => (
+            <Tab.Screen name="Download" component={DownloadScreen} options={{
+                headerShown: false, tabBarIcon: ({color}) => (
                     <Ionicons
                         name="download-outline"
                         size={30}
                         color={color}/>
-                ),}}
+                ),
+            }}
             />
 
-            <Tab.Screen name="Profile" component={ProfileScreen} options={{headerShown: false, tabBarIcon: ({color}) => (
+            <Tab.Screen name="Profile" component={ProfileScreen} options={{
+                headerShown: false, tabBarIcon: ({color}) => (
                     <Ionicons
                         name="person"
                         size={30}
-                        color={color} />
+                        color={color}/>
                 ),
             }}
             />
         </Tab.Navigator>
-        </NavigationContainer>
-        </>);
+    </>);
 }
 
 export default BottomTabNavigator

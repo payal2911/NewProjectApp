@@ -4,8 +4,10 @@ import { SafeAreaView } from "react-native-safe-area-context";
 //import { TouchableOpacity } from "react-native-gesture-handler";
 
 import { pixelNormalize } from "../constants/Size";
+import {useNavigation} from "@react-navigation/native";
 
 const Cast = (props) => {
+    const navigation = useNavigation();
     return (
         <>
             <StatusBar style="light" />
@@ -31,10 +33,15 @@ const Cast = (props) => {
                         </View>
 
                         <View style={styles.mainView}>
-                            <View style={styles.image}>
+                            <TouchableOpacity onPress={()=> {
+                                navigation.push('TVShow');
+                            }}>
+                                <View style={styles.image}>
 
-                                <Image source={require("../../assets/Images/antMan.png")} />
-                            </View>
+                                    <Image source={require("../../assets/Images/antMan.png")} />
+                                </View>
+                            </TouchableOpacity>
+
 
                             <View style={styles.image}>
                                 <Image source={require("../../assets/Images/hustle.png")} />

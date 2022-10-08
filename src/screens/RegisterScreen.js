@@ -50,16 +50,16 @@ const RegisterScreen = (props) => {
 
 
 
-                        <TouchableOpacity onPress={() =>props.navigation.navigate("Cast")}>
-            {/*            <TouchableOpacity onPress={()=>{*/}
-            {/*    navigation.push('Home');*/}
-            {/*}}>*/}
+                        {/*<TouchableOpacity onPress={() =>props.navigation.navigate("BottomTabNavigator")}>*/}
+                        <TouchableOpacity onPress={()=>{
+                navigation.push('BottomTabNavigator');
+            }}>
                             <View style={styles.innerViewContainer}>
                                 <Text style={styles.registerText}>REGISTER</Text>
                             </View>
 
                         </TouchableOpacity>
-                    </View> pp
+                    </View>
                 </SafeAreaView>
             </ScrollView>
         </>
