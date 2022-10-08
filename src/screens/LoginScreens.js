@@ -43,7 +43,8 @@ const navigation = useNavigation();
                     </View>
 
 
-                    <TouchableOpacity>
+                    <TouchableOpacity onPress={()=>{
+                        navigation.push('BottomTabNavigator'); }}>
                         <View>
                             <View style={styles.innerViewContainer}>
                                 <Text style={styles.innerText}>LOGIN</Text>

@@ -52,7 +52,7 @@ const RegisterScreen = (props) => {
 
                         {/*<TouchableOpacity onPress={() =>props.navigation.navigate("BottomTabNavigator")}>*/}
                         <TouchableOpacity onPress={()=>{
-                navigation.push('BottomTabNavigator');
+                navigation.push('Login');
             }}>
                             <View style={styles.innerViewContainer}>
                                 <Text style={styles.registerText}>REGISTER</Text>
