@@ -1,10 +1,8 @@
-import { View, Text, Image, StyleSheet, TouchableOpacity, ScrollView, FlatList, StatusBar, SafeAreaView } from "react-native";
+import { View, Text, Image, StyleSheet, TouchableOpacity, ScrollView, FlatList,SafeAreaView } from "react-native";
 import { withOrientation } from "react-navigation";
 import { Ionicons } from '@expo/vector-icons';
-
+import { StatusBar } from 'expo-status-bar';
 import { pixelNormalize } from '../constants/Size';
-// import { SafeAreaView } from "react-native-safe-area-context";
-//import { ScrollView } from "react-native-gesture-handler";
 
 const TVShowDetail = (props) => {
     return (

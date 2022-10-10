@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { StatusBar } from "expo-status-bar";
-import { View, Text, Image, TextInput, TouchableOpacity, StyleSheet, } from "react-native";
+import { View, Text, Image, TextInput, TouchableOpacity, StyleSheet} from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 import { pixelNormalize } from '../constants/Size';

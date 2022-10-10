@@ -1,5 +1,6 @@
-import { View, Text, Image, StyleSheet, TouchableOpacity, ScrollView, Pressable, StatusBar } from "react-native";
+import { View, Text, Image, StyleSheet, TouchableOpacity, ScrollView, Pressable} from "react-native";
 import { Ionicons } from '@expo/vector-icons';
+import { StatusBar } from 'expo-status-bar';
 
 import { pixelNormalize } from "../constants/Size";
 import { SafeAreaView } from "react-native-safe-area-context";

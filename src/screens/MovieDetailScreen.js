@@ -1,5 +1,6 @@
-import {View, Text, StyleSheet, Image, TouchableOpacity, ScrollView, StatusBar} from "react-native";
+import {View, Text, StyleSheet, Image, TouchableOpacity, ScrollView} from "react-native";
 import {Ionicons} from '@expo/vector-icons';
+import { StatusBar } from 'expo-status-bar';
 import {pixelNormalize} from "../constants/Size";
 import {SafeAreaView} from "react-navigation";
 import {useNavigation} from "@react-navigation/native";

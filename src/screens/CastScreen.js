@@ -1,23 +1,26 @@
-import { View, Text, StyleSheet, Image, ImageBackground, TouchableOpacity, StatusBar } from "react-native";
-import { ScrollView } from "react-native-gesture-handler";
-import { SafeAreaView } from "react-native-safe-area-context";
+import {View, Text, StyleSheet, Image, ImageBackground, TouchableOpacity} from "react-native";
+import {ScrollView} from "react-native-gesture-handler";
+import {StatusBar} from 'expo-status-bar';
+import {SafeAreaView} from "react-native-safe-area-context";
 //import { TouchableOpacity } from "react-native-gesture-handler";
 
-import { pixelNormalize } from "../constants/Size";
+import {pixelNormalize} from "../constants/Size";
 import {useNavigation} from "@react-navigation/native";
 
 const Cast = (props) => {
     const navigation = useNavigation();
     return (
         <>
-            <StatusBar style="light" />
-            <SafeAreaView>
-                <ScrollView >
+            <StatusBar style="dark"/>
+
+            <ScrollView>
+                <SafeAreaView>
                     <View style={styles.container}>
                         <View>
                             <View style={styles.ellipseContainer}>
-                                <Image style={styles.ellipseImage} source={require("../../assets/Images/Ellipse.png")} />
-                                <Image style={styles.imagePerson} source={require("../../assets/Images/IsabelaMoner.png")} />
+                                <Image style={styles.ellipseImage} source={require("../../assets/Images/Ellipse.png")}/>
+                                <Image style={styles.imagePerson}
+                                       source={require("../../assets/Images/IsabelaMoner.png")}/>
 
                             </View>
                         </View>
@@ -26,35 +29,37 @@ const Cast = (props) => {
                             <Text style={styles.penaText}>Pena</Text>
                         </View>
                         <View>
-                            <Text style={styles.mainText}>Michael Pena was born and raised in Chhicago, to Nicolasa, a social worker, and Eleuterio Pena, who worked at a button factory. His parents were oroginally from Mexico.</Text>
+                            <Text style={styles.mainText}>Michael Pena was born and raised in Chhicago, to Nicolasa, a
+                                social worker, and Eleuterio Pena, who worked at a button factory. His parents were
+                                oroginally from Mexico.</Text>
                         </View>
                         <View>
                             <Text style={styles.knownText}>Known for</Text>
                         </View>
 
                         <View style={styles.mainView}>
-                            <TouchableOpacity onPress={()=> {
+                            <TouchableOpacity onPress={() => {
                                 navigation.push('TVShow');
                             }}>
                                 <View style={styles.image}>
 
-                                    <Image source={require("../../assets/Images/antMan.png")} />
+                                    <Image source={require("../../assets/Images/antMan.png")}/>
                                 </View>
                             </TouchableOpacity>
 
 
                             <View style={styles.image}>
-                                <Image source={require("../../assets/Images/hustle.png")} />
+                                <Image source={require("../../assets/Images/hustle.png")}/>
                             </View>
 
                             <View style={styles.image}>
-                                <Image source={require("../../assets/Images/movie.png")} />
+                                <Image source={require("../../assets/Images/movie.png")}/>
                             </View>
                         </View>
 
                     </View>
-                </ScrollView>
-            </SafeAreaView>
+                </SafeAreaView>
+            </ScrollView>
         </>
     );
 }
@@ -65,10 +70,9 @@ const styles = StyleSheet.create({
     //mainContainer
     container: {
         flex: 1,
-        backgroundColor: 'black',
+        backgroundColor: "black",
         alignItems: 'center',
         height: "100%"
-
     },
     ellipseContainer: {
         width: pixelNormalize(320),
@@ -132,7 +136,7 @@ const styles = StyleSheet.create({
     image: {
         marginRight: pixelNormalize(6),
         marginLeft: pixelNormalize(6),
-        marginBottom:pixelNormalize(50)
+        marginBottom: pixelNormalize(50)
 
     }
 });

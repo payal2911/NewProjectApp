@@ -129,7 +129,7 @@ const styles = StyleSheet.create({
     textContainer: {
         color: "white",
         fontSize: pixelNormalize(12),
-        fontFamily: "GothamMedium",
+        fontFamily: "GothamBold",
         zIndex: pixelNormalize(2),
     },
     inputText: {
@@ -159,7 +159,7 @@ const styles = StyleSheet.create({
         fontSize: pixelNormalize(12),
         zIndex: pixelNormalize(3),
         position: "absolute",
-        fontFamily: "GothamMedium",
+        fontFamily: "GothamBold",
     },
     viewContainer: {
         flexDirection: 'row',
@@ -172,7 +172,7 @@ const styles = StyleSheet.create({
         right: pixelNormalize(80),
         marginTop: pixelNormalize(25),
         fontSize: pixelNormalize(11),
-        fontFamily: "GothamMedium",
+        fontFamily: "GothamBold",
     },
     innerViewContainer: {
         backgroundColor: "#FFB01c",
@@ -188,7 +188,7 @@ const styles = StyleSheet.create({
         textAlign: "center",
         padding: pixelNormalize(12),
         fontSize: pixelNormalize(14),
-        fontFamily: "GothamMedium",
+        fontFamily: "GothamBold",
 
     },
     socialView: {
@@ -203,13 +203,13 @@ const styles = StyleSheet.create({
         color: "white",
         marginTop: pixelNormalize(15),
         fontSize: pixelNormalize(14),
-        fontFamily: "GothamMedium",
+        fontFamily: "GothamBold",
         alignItems: "center"
     },
     textAccount: {
         color: "white",
         fontSize: pixelNormalize(14),
-        fontFamily: "GothamMedium",
+        fontFamily: "GothamBook",
         marginTop: pixelNormalize(50),
         alignSelf: "center",
     },
@@ -224,7 +224,6 @@ const styles = StyleSheet.create({
     innerImageContainer: {
         flexDirection: "row",
         marginTop: pixelNormalize(20),
-
         alignSelf: "center"
 
     },
