@@ -23,7 +23,7 @@ const RegisterScreen = (props) => {
 
 
                         <View style={styles.firstView}>
-                            <Text style={styles.ineerText}>FIRST NAME</Text>
+                            <Text style={styles.innerText}>FIRST NAME</Text>
                             <TextInput style={styles.inputText} placeholder="first name here" placeholderTextColor="#4b4b48"></TextInput>
                         </View>
 

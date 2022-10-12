@@ -5,7 +5,7 @@ import {StatusBar} from "expo-status-bar";
 import * as React from "react";
 import { useFonts } from "expo-font";
 import BottomTabNavigator from "./src/navigators/BottomTabNavigator";
-import Tab1Stack from "./src/navigators/tabs/Tab1Stack";
+import TabOneStack from "./src/navigators/tabs/TabOneStack";
 
 
 export default function App() {

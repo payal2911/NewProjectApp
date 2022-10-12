@@ -10,7 +10,7 @@ import MovieDetailScreen from "../../screens/MovieDetailScreen";
 
 const Stack = createNativeStackNavigator();
 
-const Tab1Navigator = () =>{
+const TabOneNavigator = () =>{
 
     return(
 
@@ -23,4 +23,4 @@ const Tab1Navigator = () =>{
     )
 }
 
-export default Tab1Navigator;
+export default TabOneNavigator;

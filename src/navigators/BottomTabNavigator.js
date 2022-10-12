@@ -1,12 +1,12 @@
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {NavigationContainer} from "@react-navigation/native";
-import Tab1Navigator from "./tabs/Tab1Navigator";
+import TabOneNavigator from "./tabs/TabOneNavigator";
 import DownloadScreen from "../screens/DownloadScreen";
 import SearchScreen from "../screens/SearchScreen";
 import ProfileScreen from "../screens/ProfileScreen";
 import {Entypo, Ionicons} from "@expo/vector-icons";
 import HomeScreen from "../screens/HomeScreen";
-import Tab1Stack from "./tabs/Tab1Stack";
+import TabOneStack from "./tabs/TabOneStack";
 
 const Tab = createBottomTabNavigator();
 const BottomTabNavigator = () => {
@@ -27,7 +27,7 @@ const BottomTabNavigator = () => {
                     //color: "red",
                 },
             }}>
-            <Tab.Screen name="Home" component={Tab1Stack } options={{
+            <Tab.Screen name="Home" component={TabOneStack } options={{
                 headerShown: false, tabBarIcon: ({color}) => (
                     <Entypo
                         name="home"

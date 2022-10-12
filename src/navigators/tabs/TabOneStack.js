@@ -12,7 +12,7 @@ import HomeScreen from "../../screens/HomeScreen";
 
 const Stack = createNativeStackNavigator();
 
-const Tab1Stack = () =>{
+const TabOneStack = () =>{
 
     return(
 
@@ -27,4 +27,4 @@ const Tab1Stack = () =>{
     )
 }
 
-export default Tab1Stack;
+export default TabOneStack;

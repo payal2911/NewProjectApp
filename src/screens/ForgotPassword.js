@@ -1,9 +1,9 @@
 import * as React from 'react';
-import { StatusBar } from "expo-status-bar";
-import { View, Text, Image, TextInput, TouchableOpacity, StyleSheet} from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
+import {StatusBar} from "expo-status-bar";
+import {View, Text, Image, TextInput, TouchableOpacity, StyleSheet} from "react-native";
+import {SafeAreaView} from "react-native-safe-area-context";
 
-import { pixelNormalize } from '../constants/Size';
+import {pixelNormalize} from '../constants/Size';
 
 const ForgotPassword = (props) => {
     return (
@@ -11,16 +11,18 @@ const ForgotPassword = (props) => {
             <StatusBar style="Light"/>
             <View style={styles.container}>
                 <SafeAreaView>
-                    <Image style={styles.logoContainer} source={require("../../assets/Images/Logo.png")} />
+                    <Image style={styles.logoContainer} source={require("../../assets/Images/Logo.png")}/>
 
                     <Text style={styles.textContainer}>FORGOT PASSWORD</Text>
                     <View style={styles.enterView}>
-                        <Text style={styles.innerText}>  Enter the email address you used to reate your account and we will email you a link to reset your passward</Text>
+                        <Text style={styles.innerText}> Enter the email address you used to reate your account and we
+                            will email you a link to reset your passward</Text>
                     </View>
 
                     <View style={styles.emailView}>
                         <Text style={styles.emailText}>EMAIL</Text>
-                        <TextInput style={styles.inputText} placeholder="email here" placeholderTextColor="#4b4b48"></TextInput>
+                        <TextInput style={styles.inputText} placeholder="email here"
+                                   placeholderTextColor="#4b4b48"></TextInput>
                     </View>
 
 
@@ -44,7 +46,7 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: "black",
         alignItems: 'center',
-        height:"100%",
+        height: "100%",
         //justifyContent: 'center',
 
     },
@@ -65,11 +67,11 @@ const styles = StyleSheet.create({
         alignSelf: "center"
         // fontWeight: "bold"
     },
-    enterView:{
+    enterView: {
         marginTop: pixelNormalize(14),
-        textAlign:"center",
-        marginLeft:pixelNormalize(62),
-        marginRight:pixelNormalize(62)
+        textAlign: "center",
+        marginLeft: pixelNormalize(62),
+        marginRight: pixelNormalize(62)
     },
     innerText: {
         color: "white",
@@ -83,9 +85,10 @@ const styles = StyleSheet.create({
         width: pixelNormalize(285),
         height: pixelNormalize(62),
         opacity: 1,
+        alignSelf: "center",
         marginTop: pixelNormalize(37),
-        marginLeft: pixelNormalize(45),
-        marginRight: pixelNormalize(45)
+        // marginLeft: pixelNormalize(45),
+        // marginRight: pixelNormalize(45)
 
     },
 

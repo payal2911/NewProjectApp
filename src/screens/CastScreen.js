@@ -11,17 +11,15 @@ const Cast = (props) => {
     const navigation = useNavigation();
     return (
         <>
-            <StatusBar style="dark"/>
-
-            <ScrollView>
-                <SafeAreaView>
+            <StatusBar style="auto"/>
+            <SafeAreaView>
+                <ScrollView>
                     <View style={styles.container}>
                         <View>
                             <View style={styles.ellipseContainer}>
                                 <Image style={styles.ellipseImage} source={require("../../assets/Images/Ellipse.png")}/>
                                 <Image style={styles.imagePerson}
                                        source={require("../../assets/Images/IsabelaMoner.png")}/>
-
                             </View>
                         </View>
                         <View>
@@ -36,7 +34,6 @@ const Cast = (props) => {
                         <View>
                             <Text style={styles.knownText}>Known for</Text>
                         </View>
-
                         <View style={styles.mainView}>
                             <TouchableOpacity onPress={() => {
                                 navigation.push('TVShow');
@@ -56,10 +53,9 @@ const Cast = (props) => {
                                 <Image source={require("../../assets/Images/movie.png")}/>
                             </View>
                         </View>
-
                     </View>
-                </SafeAreaView>
-            </ScrollView>
+                </ScrollView>
+            </SafeAreaView>
         </>
     );
 }
