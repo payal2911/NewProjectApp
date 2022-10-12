@@ -35,7 +35,6 @@ const navigation = useNavigation();
                         <TextInput style={styles.inputText} placeholder="password here" placeholderTextColor="#4b4b48">
 
                         </TextInput>
-                        {/*<TouchableOpacity onPress={() => props.navigation.navigate("ForgotPassward")}>*/}
                             <TouchableOpacity onPress={()=>{
                                 navigation.push('Forgot'); }}>
                             <Text style={styles.textForgot}>FORGOT?</Text>
@@ -148,7 +147,7 @@ const styles = StyleSheet.create({
         height: pixelNormalize(62),
         marginLeft: pixelNormalize(45),
         marginRight: pixelNormalize(45),
-        marginTop: pixelNormalize(435),
+        marginTop: pixelNormalize(445),
         position: "absolute",
         zIndex: pixelNormalize(2),
         opacity: 1,

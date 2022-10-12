@@ -92,6 +92,7 @@ const styles = StyleSheet.create({
         color: "white",
         alignSelf: "center",
         fontSize: pixelNormalize(27),
+        fontFamily:"GothamMedium",
         marginTop: pixelNormalize(26)
     },
     premimumText: {
@@ -104,19 +105,23 @@ const styles = StyleSheet.create({
     iconText: {
         color: "white",
         marginLeft: pixelNormalize(20),
-        fontSize: pixelNormalize(20),
+        fontSize: pixelNormalize(17),
+        fontFamily: "GothamBook",
         textAlign: "center",
     },
     notificationText: {
         color: "white",
-        fontSize: pixelNormalize(20),
+        marginTop:pixelNormalize(7),
+        fontSize: pixelNormalize(17),
+        fontFamily: "GothamBook",
         marginLeft: pixelNormalize(20),
         textAlign: "center",
     },
 
     helpText: {
         color: "white",
-        fontSize: pixelNormalize(20),
+        fontSize: pixelNormalize(17),
+        fontFamily: "GothamBook",
         marginLeft: pixelNormalize(20),
         textAlign: "center",
     },

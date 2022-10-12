@@ -32,6 +32,9 @@ const BottomTabNavigator = () => {
                     <Entypo
                         name="home"
                         size={30}
+
+
+
                         color={color}/>
                 ),
             }}

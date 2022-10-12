@@ -8,7 +8,7 @@ import {pixelNormalize} from '../constants/Size';
 const ForgotPassword = (props) => {
     return (
         <>
-            <StatusBar style="Light"/>
+            <StatusBar style="auto"/>
             <View style={styles.container}>
                 <SafeAreaView>
                     <Image style={styles.logoContainer} source={require("../../assets/Images/Logo.png")}/>

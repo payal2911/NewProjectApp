@@ -118,13 +118,15 @@ const styles = StyleSheet.create({
     },
     mainText: {
         color: "white",
-        fontSize: pixelNormalize(22),
+        fontSize: pixelNormalize(15),
+        fontFamily:"GothamMedium",
         marginTop: pixelNormalize(30)
     },
     gbTexts: {
         color: "white",
-        fontSize: pixelNormalize(15),
-        marginTop: pixelNormalize(4)
+        fontSize: pixelNormalize(13),
+        fontFamily: "GothamBook",
+        marginTop: pixelNormalize(5)
     },
 
 });

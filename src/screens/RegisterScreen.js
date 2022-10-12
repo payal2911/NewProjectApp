@@ -39,12 +39,12 @@ const RegisterScreen = (props) => {
                         </View>
 
                         <View style={styles.passwordView}>
-                            <Text style={styles.passwardText}>PASSWORD</Text>
+                            <Text style={styles.passwordText}>PASSWORD</Text>
                             <TextInput style={styles.inputText} placeholder="password here" placeholderTextColor="#4b4b48"></TextInput>
                         </View>
 
                         <View style={styles.confirmView}>
-                            <Text style={styles.confirmPasswardText}>CONFIRM PASSWORD</Text>
+                            <Text style={styles.confirmPasswordText}>CONFIRM PASSWORD</Text>
                             <TextInput style={styles.inputText} placeholder="confirem password here" placeholderTextColor="#4b4b48"></TextInput>
                         </View>
 
@@ -104,7 +104,7 @@ const styles = StyleSheet.create({
         marginTop: pixelNormalize(49),
     },
 
-    ineerText: {
+    innerText: {
         color: "white",
         fontSize: pixelNormalize(12),
         fontFamily: "GothamBold"
@@ -132,13 +132,13 @@ const styles = StyleSheet.create({
         // fontWeight: "bold",
         fontFamily: "GothamBold"
     },
-    passwardText: {
+    passwordText: {
         color: "white",
         fontSize: pixelNormalize(12),
         // fontWeight: "bold",
         fontFamily: "GothamBold"
     },
-    confirmPasswardText: {
+    confirmPasswordText: {
         color: "white",
         fontSize: pixelNormalize(12),
         // fontWeight: "bold",

@@ -78,33 +78,36 @@ const styles = StyleSheet.create({
     },
     showText: {
         marginLeft: pixelNormalize(19),
-        fontSize: 15,
+        fontSize: 12,
+        fontFamily:"GothamMedium",
         color: "white"
     },
     imageContainer: {
-        width: pixelNormalize(120),
-        height: pixelNormalize(150),
-        marginTop: pixelNormalize(20),
+        width: pixelNormalize(91),
+        height: pixelNormalize(135),
+        marginTop: pixelNormalize(28),
         marginLeft: pixelNormalize(19)
         // marginRight: pixelNormalize(190)
     },
     movieText: {
+        // marginTop: pixelNormalize(31),
         marginLeft: pixelNormalize(19),
-        fontSize: 15,
+        fontSize: 12,
+        fontFamily:"GothamMedium",
         color: "white"
     },
     streetImage: {
-        width: pixelNormalize(120),
-        height: pixelNormalize(150),
-        marginTop: pixelNormalize(20),
+        width: pixelNormalize(91),
+        height: pixelNormalize(135),
+        marginTop: pixelNormalize(28),
         marginLeft: pixelNormalize(19)
 
 
     },
     fighterImage: {
-        width: pixelNormalize(120),
-        height: pixelNormalize(150),
-        marginTop: pixelNormalize(20),
+        width: pixelNormalize(91),
+        height: pixelNormalize(135),
+        marginTop: pixelNormalize(28),
         marginLeft: pixelNormalize(40)
     },
     mainView: {
