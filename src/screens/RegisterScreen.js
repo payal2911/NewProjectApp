@@ -1,20 +1,22 @@
-import { StatusBar } from 'expo-status-bar';
-import { View, Text, TouchableOpacity, Image, StyleSheet, TextInput, ScrollView, SafeAreaView } from "react-native";
-import { pixelNormalize } from "../constants/Size";
+import {StatusBar} from 'expo-status-bar';
+import {View, Text, TouchableOpacity, Image, StyleSheet, TextInput, ScrollView, SafeAreaView} from "react-native";
+import {pixelNormalize} from "../constants/Size";
 import {useNavigation} from "@react-navigation/native";
 
 const RegisterScreen = (props) => {
     const navigation = useNavigation();
     return (
         <>
-            <StatusBar style="light" />
-            <ScrollView>
-                <SafeAreaView>
+            <StatusBar style="light"/>
+            <SafeAreaView>
+                <ScrollView>
+
                     <View style={styles.mainContainer}>
 
-                        <View style={{ width: pixelNormalize(122), height: pixelNormalize(135) }}>
+                        <View style={{width: pixelNormalize(122), height: pixelNormalize(135)}}>
                             <View style={styles.viewContainer}>
-                                <Image style={styles.imageContainer} source={require("../../assets/Images/userProfile.png")} />
+                                <Image style={styles.imageContainer}
+                                       source={require("../../assets/Images/userProfile.png")}/>
                             </View>
 
                         </View>
@@ -24,44 +26,49 @@ const RegisterScreen = (props) => {
 
                         <View style={styles.firstView}>
                             <Text style={styles.innerText}>FIRST NAME</Text>
-                            <TextInput style={styles.inputText} placeholder="first name here" placeholderTextColor="#4b4b48"></TextInput>
+                            <TextInput style={styles.inputText} placeholder="first name here"
+                                       placeholderTextColor="#4b4b48"></TextInput>
                         </View>
 
                         <View style={styles.lastView}>
                             <Text style={styles.lastText}>LAST NAME</Text>
-                            <TextInput style={styles.inputText} placeholder="last name here" placeholderTextColor="#4b4b48"></TextInput>
+                            <TextInput style={styles.inputText} placeholder="last name here"
+                                       placeholderTextColor="#4b4b48"></TextInput>
                         </View>
 
 
                         <View style={styles.emailView}>
                             <Text style={styles.emailText}>EMAIL</Text>
-                            <TextInput style={styles.inputText} placeholder="email here" placeholderTextColor="#4b4b48"></TextInput>
+                            <TextInput style={styles.inputText} placeholder="email here"
+                                       placeholderTextColor="#4b4b48"></TextInput>
                         </View>
 
                         <View style={styles.passwordView}>
                             <Text style={styles.passwordText}>PASSWORD</Text>
-                            <TextInput style={styles.inputText} placeholder="password here" placeholderTextColor="#4b4b48"></TextInput>
+                            <TextInput style={styles.inputText} placeholder="password here"
+                                       placeholderTextColor="#4b4b48"></TextInput>
                         </View>
 
                         <View style={styles.confirmView}>
                             <Text style={styles.confirmPasswordText}>CONFIRM PASSWORD</Text>
-                            <TextInput style={styles.inputText} placeholder="confirem password here" placeholderTextColor="#4b4b48"></TextInput>
+                            <TextInput style={styles.inputText} placeholder="confirem password here"
+                                       placeholderTextColor="#4b4b48"></TextInput>
                         </View>
 
 
-
                         {/*<TouchableOpacity onPress={() =>props.navigation.navigate("BottomTabNavigator")}>*/}
-                        <TouchableOpacity onPress={()=>{
-                navigation.push('Login');
-            }}>
+                        <TouchableOpacity onPress={() => {
+                            navigation.push('Login');
+                        }}>
                             <View style={styles.innerViewContainer}>
                                 <Text style={styles.registerText}>REGISTER</Text>
                             </View>
 
                         </TouchableOpacity>
                     </View>
-                </SafeAreaView>
-            </ScrollView>
+                </ScrollView>
+            </SafeAreaView>
+
         </>
     );
 }

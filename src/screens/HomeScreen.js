@@ -6,8 +6,13 @@ import { pixelNormalize } from "../constants/Size";
 import { SafeAreaView } from "react-native-safe-area-context";
 import {useNavigation} from "@react-navigation/native";
 
+import { LogBox } from "react-native";
+
+LogBox.ignoreLogs(["EventEmitter.removeListener"]);
+
 const Home = (props) => {
     const navigation = useNavigation();
+
 return (
         <>
             <StatusBar style="light" />

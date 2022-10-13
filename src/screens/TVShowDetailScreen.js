@@ -116,8 +116,9 @@ const styles = StyleSheet.create({
     textContainer: {
         color: "white",
         fontSize: pixelNormalize(19),
+        fontFamily: "GothamMedium",
         marginLeft: pixelNormalize(16),
-        fontWeight: "bold",
+        // fontWeight: "bold",
         //marginTop: 100,
         bottom: pixelNormalize(60),
         // marginBottom:normalize (40),
@@ -128,7 +129,8 @@ const styles = StyleSheet.create({
         bottom: pixelNormalize(60),
         marginTop: pixelNormalize(14),
         fontSize: pixelNormalize(12),
-        fontWeight: "bold",
+        fontFamily: "GothamMedium",
+        // fontWeight: "bold",
         marginLeft: pixelNormalize(16),
         //marginHorizontal:normalize (12)
         //marginRight: pixelNormalize(10)
@@ -137,7 +139,8 @@ const styles = StyleSheet.create({
         color: "white",
         alignSelf: "center",
         bottom: pixelNormalize(45),
-        fontSize: pixelNormalize(38),
+        fontSize: pixelNormalize(33),
+        fontFamily: "GothamBook",
         marginTop: pixelNormalize(28)
         //fontWeight: "bold"
     },
@@ -149,6 +152,7 @@ const styles = StyleSheet.create({
     netflixText: {
         color: "white",
         fontSize: pixelNormalize(15),
+        // fontFamily: "GothamBook",
         marginTop: pixelNormalize(28),
         marginLeft: pixelNormalize(16),
         marginRight: pixelNormalize(16),
@@ -169,14 +173,15 @@ const styles = StyleSheet.create({
         alignSelf: "center",
         top: pixelNormalize(8),
         fontSize: pixelNormalize(14),
-        fontFamily: "Gotham-Bold",
-        fontWeight: "bold"
+        fontFamily: "GothamBold",
+        // fontWeight: "bold"
     },
     castText: {
         color: "white",
         bottom: pixelNormalize(20),
-        fontSize: pixelNormalize(20),
-        fontWeight: "bold",
+        fontSize: pixelNormalize(15),
+        fontFamily: "GothamBold",
+        // fontWeight: "bold",
         marginLeft: pixelNormalize(16)
         // paddingRight: pixelNormalize(240),
     },
@@ -186,14 +191,16 @@ const styles = StyleSheet.create({
     },
     kingpinText: {
         color: "white",
-        fontSize: pixelNormalize(16),
-        fontWeight: "bold",
+        fontSize: pixelNormalize(15),
+        fontFamily: "GothamMedium",
+        // fontWeight: "bold",
         marginLeft: pixelNormalize(8),
         marginTop: pixelNormalize(5)
     },
     kingpinMin: {
         color: "white",
-        fontSize: pixelNormalize(14),
+        fontSize: pixelNormalize(13),
+        fontFamily: "GothamBook",
         //fontWeight: "bold",
         marginLeft: pixelNormalize(8),
         marginTop: pixelNormalize(5)
@@ -215,8 +222,9 @@ const styles = StyleSheet.create({
     },
     caliText: {
         color: "white",
-        fontSize: pixelNormalize(16),
-        fontWeight: "bold",
+        fontSize: pixelNormalize(15),
+        fontFamily: "GothamMedium",
+        // fontWeight: "bold",
         marginLeft: pixelNormalize(8),
         marginTop: pixelNormalize(30)
     }
